@@ -1,0 +1,14 @@
+import random
+
+def generate_18_digit_number():
+    # Dev Note: Easy so far..
+    number = random.randint(10**17, 10**18 - 1)
+    return number
+
+# Heres where it got hard..
+with open("18_digit_numbers.txt", "w") as file:
+    for _ in range(1000000):
+        number = generate_18_digit_number()
+        file.write(f"{number}\n")
+
+print("1 Million codes have been written.")
