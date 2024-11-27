@@ -1,0 +1,2 @@
+# Generator
+Generates giftcard codes.
